@@ -1,13 +1,11 @@
 #!/bin/bash
 
-echo "=============================="
-echo "📘 飞书"
-echo "=============================="
+CACHE="$HOME/Library/Containers/com.bytedance.macos.feishu/Data/Library/Caches"
+DATA="$HOME/Library/Containers/com.bytedance.macos.feishu/Data/Library/Application Support"
 
-cache=$(du -sh ~/Library/Containers/com.bytedance.macos.feishu/Data/Library/Caches 2>/dev/null | awk '{print $1}')
-support=$(du -sh ~/Library/Containers/com.bytedance.macos.feishu/Data/Library/Application\ Support 2>/dev/null | awk '{print $1}')
+CACHE_SIZE=$(du -sh "$CACHE" 2>/dev/null | awk '{print $1}')
+DATA_SIZE=$(du -sh "$DATA" 2>/dev/null | awk '{print $1}')
 
-echo "缓存大小：$cache"
-echo "数据占用：$support"
-echo "风险等级：🟢 缓存可清理 / 🟡 数据请勿直接删除"
-echo "建议：优先使用飞书自带『存储空间清理』功能。"
+echo "CACHE_SIZE=$CACHE_SIZE"
+echo "DATA_SIZE=$DATA_SIZE"
+echo "RISK=MEDIUM"
