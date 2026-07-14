@@ -73,6 +73,8 @@ MacButler
 
 - [x] Disk
 - [x] Chrome
+- [x] 飞书
+- [x] 微信
 
 ---
 
@@ -96,8 +98,6 @@ python3 main.py
 
 准备开发：
 
-- [ ] 飞书检查
-- [ ] 微信检查
 - [ ] WPS 检查
 
 之后：
