@@ -75,6 +75,7 @@ MacButler
 - [x] Chrome
 - [x] 飞书
 - [x] 微信
+- [x] WPS
 
 ---
 
@@ -94,17 +95,13 @@ python3 main.py
 
 ---
 
-# 下一步（Sprint 2）
+# 下一步（Sprint）
 
 准备开发：
 
-- [ ] WPS 检查
-
-之后：
-
 - [ ] 一键体检
 
-再之后：
+之后：
 
 - [ ] 一键安全清理
 
