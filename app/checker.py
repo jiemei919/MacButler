@@ -1,5 +1,6 @@
 import subprocess
 import re
+import os
 
 
 def run_shell(path):
@@ -20,11 +21,14 @@ def get_value(text, key):
 
 def run_check():
 
-    disk = run_shell("../modules/disk.sh")
-    chrome = run_shell("../modules/chrome.sh")
-    feishu = run_shell("../modules/feishu.sh")
-    wechat = run_shell("../modules/wechat.sh")
-    wps = run_shell("../modules/wps.sh")
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    modules_dir = os.path.join(base_dir, "modules")
+
+    disk = run_shell(os.path.join(modules_dir, "disk.sh"))
+    chrome = run_shell(os.path.join(modules_dir, "chrome.sh"))
+    feishu = run_shell(os.path.join(modules_dir, "feishu.sh"))
+    wechat = run_shell(os.path.join(modules_dir, "wechat.sh"))
+    wps = run_shell(os.path.join(modules_dir, "wps.sh"))
 
     return {
 
