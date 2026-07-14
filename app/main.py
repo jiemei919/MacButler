@@ -8,6 +8,7 @@ print()
 modules = [
     "../modules/disk.sh",
     "../modules/chrome.sh",
+    "../modules/feishu.sh",
 ]
 
 for module in modules:
