@@ -9,6 +9,7 @@ modules = [
     "../modules/disk.sh",
     "../modules/chrome.sh",
     "../modules/feishu.sh",
+    "../modules/wechat.sh",
 ]
 
 for module in modules:
