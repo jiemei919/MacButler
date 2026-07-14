@@ -10,6 +10,7 @@ modules = [
     "../modules/chrome.sh",
     "../modules/feishu.sh",
     "../modules/wechat.sh",
+    "../modules/wps.sh",
 ]
 
 for module in modules:
